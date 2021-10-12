@@ -3,8 +3,6 @@ import os
 import sys
 import random
 
-from tendo import singleton
-
 from PyQt5 import uic
 from PyQt5.QtCore import QThread, pyqtSignal
 from PyQt5.QtWidgets import QApplication, QMainWindow, QScrollBar
@@ -65,7 +63,6 @@ class HanagramWindow(QMainWindow, hanagram_ui):
     
 
 if __name__=='__main__':
-  me = singleton.SingleInstance()
   app = QApplication(sys.argv)
   win = HanagramWindow(app)
   win.show()
