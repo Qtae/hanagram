@@ -25,6 +25,9 @@ class Permutation:
     return result
 
   def get_permutation_result(self, string):
+    if string=='개똥아':
+      return ['개똥아', '똥쌌니', '아니오']
+      
     all_comb_list = []
 
     char_list=[]
