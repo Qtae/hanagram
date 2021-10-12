@@ -1,4 +1,5 @@
 #main controller of the program.
+import os
 import sys
 
 from PyQt5 import uic
@@ -7,7 +8,8 @@ from PyQt5.QtWidgets import QApplication, QMainWindow
 
 from permutation import Permutation
 
-hanagram_ui = uic.loadUiType('./hanagram.ui')[0]
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+hanagram_ui = uic.loadUiType(BASE_DIR + r'\hanagram.ui')[0]
 
 class WorkThread(QThread):
   send_status_signal = pyqtSignal(bool)
