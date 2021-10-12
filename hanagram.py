@@ -32,7 +32,7 @@ class HanagramWindow(QMainWindow, hanagram_ui):
   def __init__(self, QApplication):
     super().__init__()
     self.setupUi(self)
-    self.setWindowTitle('hanagram ver 0.0.3')
+    self.setWindowTitle('hanagram ver 0.0.4')
 
     self.permut = Permutation()
     self.string = ''
