@@ -24,10 +24,19 @@ class Permutation:
         result += tmp
     return result
 
+  def permutation_swap(self, result, list, start, end):
+    if start == end:
+      result.append(list[:])
+    else:
+      for idx in range(start, end):
+        list[start], list[idx] = list[idx], list[start]
+        self.permutation_swap(result, list, start + 1, end)
+        list[start], list[idx] = list[idx], list[start]
+
   def get_permutation_result(self, string):
     if string=='개똥아':
       return ['개똥아', '똥쌌니', '아니오']
-      
+
     all_comb_list = []
 
     char_list=[]
@@ -38,7 +47,9 @@ class Permutation:
       else:
         char_list.append(char)
     
-    res = self.permutation(char_list)
+    #res = self.permutation(char_list)
+    res = []
+    self.permutation_swap(res, char_list, 0, len(char_list))
 
     for char_list in res:
       for idx in spacebar_index_list:
