@@ -57,7 +57,8 @@ class Permutation:
       res_string=''
       for char in char_list:
         res_string = res_string+char
-      all_comb_list.append(res_string)
+      if not res_string in all_comb_list:
+        all_comb_list.append(res_string)
     
     return all_comb_list
 
