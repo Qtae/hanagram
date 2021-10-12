@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>373</width>
+    <height>371</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Verdana</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(25, 25, 25); color: rgb(255, 255, 255);</string>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonIconOnly</enum>
+  </property>
+  <property name="animated">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <layout class="QGridLayout" name="central_grid_layout" rowstretch="0" columnstretch="0">
+    <property name="leftMargin">
+     <number>5</number>
+    </property>
+    <property name="topMargin">
+     <number>5</number>
+    </property>
+    <property name="rightMargin">
+     <number>5</number>
+    </property>
+    <property name="bottomMargin">
+     <number>5</number>
+    </property>
+    <property name="spacing">
+     <number>5</number>
+    </property>
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>80</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>80</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Input String</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit">
+          <property name="minimumSize">
+           <size>
+            <width>87</width>
+            <height>1</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>300</width>
+            <height>25</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton">
+          <property name="minimumSize">
+           <size>
+            <width>60</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>60</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(94, 94, 94, 255), stop:1 rgba(80, 80, 80, 255));
+border-radius: 2px; 
+border-width: 2px;
+border-color:rgb(65, 65, 65);
+border-style: outset;
+}
+
+QPushButton:checked{
+background-color: rgb(80, 243, 133);
+color: rgb(30,30,30);
+border-radius: 2px; 
+border-width: 2px;
+border-color:rgb(50, 213, 103);
+border-style: inset;
+}
+
+QPushButton:pressed:!checked{
+color: rgb(225, 225, 225);
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(80, 80, 80, 255), stop:1 rgba(94, 94, 94, 255));
+border-radius: 2px; 
+border-width: 2px;
+border-color:rgb(65, 65, 65);
+border-style: inset;
+}
+
+QPushButton:pressed:checked{
+background-color: rgb(70, 233, 123);
+color: rgb(20,20,20);
+border-radius: 2px; 
+border-width: 2px;
+border-color:rgb(40, 203, 93);
+border-style: inset;
+}
+
+QPushButton:hover:!pressed:!checked{
+color: rgb(255, 255, 255);
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(104, 104, 104, 255), stop:1 rgba(90, 90, 90, 255));
+border-radius: 2px; 
+border-width: 2px;
+border-color:rgb(75, 75, 75);
+border-style: outset;
+}
+
+QPushButton:hover:!pressed:checked{
+background-color: rgb(90, 253, 143);
+color: rgb(40,40,40);
+border-radius: 2px; 
+border-width: 1px;
+border-color:rgb(60, 223, 113);
+border-style: inset;
+}</string>
+          </property>
+          <property name="text">
+           <string>generates</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QTextBrowser" name="textBrowser"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+    </font>
+   </property>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>373</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+    </font>
+   </property>
+  </widget>
+  <action name="actionExit_Program">
+   <property name="text">
+    <string>Exit Program</string>
+   </property>
+  </action>
+  <action name="actionDialog">
+   <property name="text">
+    <string>Dialog</string>
+   </property>
+  </action>
+  <action name="actionSetting1">
+   <property name="text">
+    <string>Setting1</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

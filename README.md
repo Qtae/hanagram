@@ -1,2 +1,3 @@
 # hanagram
-generates all permutations of a given string
+It generates all permutations of a given string.
+And it is almost useless.
