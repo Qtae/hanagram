@@ -180,6 +180,80 @@ border-style: inset;
       <item>
        <widget class="QTextBrowser" name="textBrowser"/>
       </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_Shuffle">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(94, 94, 94, 255), stop:1 rgba(80, 80, 80, 255));
+border-radius: 2px; 
+border-width: 2px;
+border-color:rgb(65, 65, 65);
+border-style: outset;
+}
+
+QPushButton:checked{
+background-color: rgb(80, 243, 133);
+color: rgb(30,30,30);
+border-radius: 2px; 
+border-width: 2px;
+border-color:rgb(50, 213, 103);
+border-style: inset;
+}
+
+QPushButton:pressed:!checked{
+color: rgb(225, 225, 225);
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(80, 80, 80, 255), stop:1 rgba(94, 94, 94, 255));
+border-radius: 2px; 
+border-width: 2px;
+border-color:rgb(65, 65, 65);
+border-style: inset;
+}
+
+QPushButton:pressed:checked{
+background-color: rgb(70, 233, 123);
+color: rgb(20,20,20);
+border-radius: 2px; 
+border-width: 2px;
+border-color:rgb(40, 203, 93);
+border-style: inset;
+}
+
+QPushButton:hover:!pressed:!checked{
+color: rgb(255, 255, 255);
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(104, 104, 104, 255), stop:1 rgba(90, 90, 90, 255));
+border-radius: 2px; 
+border-width: 2px;
+border-color:rgb(75, 75, 75);
+border-style: outset;
+}
+
+QPushButton:hover:!pressed:checked{
+background-color: rgb(90, 253, 143);
+color: rgb(40,40,40);
+border-radius: 2px; 
+border-width: 1px;
+border-color:rgb(60, 223, 113);
+border-style: inset;
+}</string>
+        </property>
+        <property name="text">
+         <string>Shuffle it, ashen one.</string>
+        </property>
+       </widget>
+      </item>
      </layout>
     </item>
    </layout>
